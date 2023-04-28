@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.16.1.55165",
+      "templateHash": "8173735911808700334"
+    }
+  },
+  "parameters": {
+    "service": {
+      "type": "string",
+      "defaultValue": "myservice"
+    },
+    "env": {
+      "type": "string",
+      "defaultValue": "test"
+    },
+    "region": {
+      "type": "string",
+      "defaultValue": "westus3"
+    }
+  },
+  "resources": [],
+  "outputs": {
+    "rgName": {
+      "type": "string",
+      "value": "[format('rg-deji-{0}-{1}-{2}', parameters('service'), parameters('env'), parameters('region'))]"
+    }
+  }
+}
