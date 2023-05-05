@@ -1,0 +1,19 @@
+{
+  "analyzers": {
+    "core": {
+      "rules": {
+        "no-unused-params": {
+          "level": "warning"
+        }
+      }
+    }
+  },
+  "moduleAliases": {
+    "ts": {
+      "infraSpecs": {
+        "subscription": "SET-ME",
+        "resourceGroup": "rg-myorg-templatespec-wu3"
+      }
+    }
+  }
+}
